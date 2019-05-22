@@ -1,0 +1,7 @@
+Muirrum received 2 training points at Tue May 21 22:26:53 2019
+call chain: ({ /* sizeof() == 4 */
+  /domains/town/npc/dirk#201,
+  /domains/town/npc/dirk#201,
+  /verbs/common/ask,
+  /secure/save/creators/m/muirrum
+})

@@ -1,0 +1,11 @@
+HakkardTest crashed Tue May 21 19:06:35 2019 with error Process interrupted.
+
+0:OBJ(/secure/sefun/sefun), file: /secure/sefun/sefun.c, fun: get_stack, origin: simul
+1:OBJ(/secure/daemon/master), file: /secure/daemon/master.c, fun: crash, origin: driver
+2:OBJ(/secure/sefun/sefun), file: /secure/sefun/sefun.c, fun: CATCH, origin: simul
+3:OBJ(/secure/sefun/sefun), file: /secure/sefun/sefun.c, fun: load_object, origin: simul
+4:OBJ(/daemon/verbs), file: /daemon/verbs.c, fun: CATCH, origin: call_other
+5:OBJ(/daemon/verbs), file: /daemon/verbs.c, fun: ScheduledVerbLoad, origin: call_other
+6:OBJ(/daemon/verbs), file: /<driver>, fun: <function>, origin: function pointer
+({ OBJ(/secure/sefun/sefun), OBJ(/daemon/verbs), OBJ(/daemon/verbs) })
+---
