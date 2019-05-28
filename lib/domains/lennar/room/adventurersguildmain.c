@@ -11,6 +11,9 @@ void create() {
     SetItems(([
         ({ "statue", "large statue" }) : "It's a large statue of a portly middle-aged man sitting on a throne. His face looks stern.",
       ]));
+    SetInventory(([
+        "/domains/lennar/npc/odogarfield" : 1,
+      ]));
     SetExits(([
         "south" : "/domains/lennar/room/mainstreet1",
       ]));

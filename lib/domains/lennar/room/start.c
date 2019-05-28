@@ -12,6 +12,10 @@ void create() {
         ({ "table", "tables" }) : "These are long wooden tables, that look like they've seen many years of drinking and abuse. Though old, they look sturdy enough to take many more beatings.",
         ({ "patron", "patrons" }) : "These are smelly, unwashed humans and halflings enjoying themselves enormously.",
       ]));
+    SetInventory(([
+        "/domains/lennar/npc/sarumsmort" : 1,
+        "/domains/lennar/npc/clereboldvance" : 1,
+      ]));
     SetExits( ([
         "east" : "/domains/lennar/room/citystreet1.c",
       ]) );
