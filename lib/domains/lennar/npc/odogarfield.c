@@ -5,10 +5,11 @@
 #endif
 
 inherit LIB_SENTIENT;
+int hint;
 int Advance(mixed arg);
 mapping advancement, Levels;
 static void create() {
-    int count
+    int i;
     sentient::create();
     Levels = PLAYERS_D->GetLevelList();
     SetKeyName("odo");
@@ -34,8 +35,8 @@ static void create() {
         ({"level", "levels", "leveling", "advancement", "advancing" }) : "To level, get some experience, then come back and ask me to advance. For some levels you may need quest points to advance as well as experience.",
         ({"xp", "XP", "experience"}) : "You can gain experience by killing monsters or completing quests.",
     ]));
-    for(count=0;count<21;count++){
-        advancement[count] = Levels[count];
+    for(i=0;i<21;i++){
+        advancement[i] = Levels[i];
     }
 }
 void init(){
