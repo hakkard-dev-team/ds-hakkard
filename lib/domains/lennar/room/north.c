@@ -6,16 +6,12 @@ inherit LIB_ROOM;
 void create() {
     room::create();
     SetAmbientLight(30);
-    SetShort("Elma Street");
+    SetShort("copy of citystreet1.c");
     SetLong("This is a long north-south street that bisects Lennar. To the north you see a large city square with a statue. To the west is the Prancing Dolphin tavern.");
-    SetExits( ([
-        "west" : "/domains/lennar/room/start",
-        "north" : "/domains/lennar/room/everettsquare.c",
-      ]) );
+    SetExits(([
+      ]));
 
     SetClimate("indoors");
-
-    SetDoor("west", "/domains/lennar/doors/dolphintostreet.c");
 
 }
 void init(){
