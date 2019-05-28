@@ -12,6 +12,7 @@ static void create() {
     int i;
     sentient::create();
     Levels = PLAYERS_D->GetLevelList();
+    advancement = ([]);
     SetKeyName("odo");
     SetId( ({"odo"}) );
     SetAdjectives(({"non player"}));
