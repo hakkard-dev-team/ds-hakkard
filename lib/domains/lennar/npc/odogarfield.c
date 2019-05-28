@@ -1,4 +1,8 @@
 #include <lib.h>
+#include <daemons.h>
+#ifndef REQUIRE_QUESTING
+#define REQUIRE_QUESTING 1
+#endif
 
 inherit LIB_SENTIENT;
 int Advance(mixed arg);
