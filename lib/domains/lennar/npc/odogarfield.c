@@ -8,6 +8,7 @@ inherit LIB_SENTIENT;
 int Advance(mixed arg);
 mapping advancement, Levels;
 static void create() {
+    int count
     sentient::create();
     Levels = PLAYERS_D->GetLevelList();
     SetKeyName("odo");
