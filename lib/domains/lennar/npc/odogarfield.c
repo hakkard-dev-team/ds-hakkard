@@ -20,6 +20,7 @@ static void create() {
     SetLong("This dark-skinned man stands 5'11\" and tends to wear a heavy leather apron. Coupled with his rolled up shirt sleeves this gives him a very relaxed look. His long blonde hair reaches down to his waist. His brown eyes have a joyful gleam in them most of the time.");
     SetPolyglot(1);
     SetLanguage("common", 100);
+    SetDefaultLanguage("common");
     SetLevel(15);
     SetMelee(1);
     SetRace("human");
