@@ -88,6 +88,6 @@ varargs void SetLongAndItems(int x, int y, int z) {
     SetDayLight(30);
     SetNightLight(30);
     SetInventory(inv);
-    SetTerrainType(T_wastes);
-    SetMedium(MEDIUM_wastes);
+    SetTerrainType(T_SURFACE);
+    SetMedium(MEDIUM_SURFACE);
 }
