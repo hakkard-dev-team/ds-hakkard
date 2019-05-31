@@ -35,23 +35,21 @@ varargs static void create(int x, int y) {
     SetClimate("desert");
     SetLongAndItems(x, y);
     SetShort("Northern Wastes");
-    if( x >= max_east ) e = "surface/" + (max_west) + "," + y;
-    else e = "surface/" + (x+1) + "," + y;
-    if( x <= max_west ) w = "surface/" + (max_east) + "," + y;
-    else w = "surface/" + (x-1) + "," + y;
-    if( y >= max_north ) n = "surface/" + x + "," + (max_south);
-    else n = "surface/" + x + "," + (y+1);
-    if( y <= max_south ) s = "surface/" + x+ "," + (max_north);
-    else s = "surface/" + x + "," + (y-1);
-    sink = "sub/" + x + "," + y + "," + 1;
+    if( x >= max_east ) e = "wastes/" + (max_west) + "," + y;
+    else e = "wastes/" + (x+1) + "," + y;
+    if( x <= max_west ) w = "wastes/" + (max_east) + "," + y;
+    else w = "wastes/" + (x-1) + "," + y;
+    if( y >= max_north ) n = "wastes/" + x + "," + (max_south);
+    else n = "wastes/" + x + "," + (y+1);
+    if( y <= max_south ) s = "wastes/" + x+ "," + (max_north);
+    else s = "wastes/" + x + "," + (y-1);
     fly = "sky/" + x + "," + y + "," + 1;
 
-    nw = "surface/" + LimitTravel(x - 1, max_east, 1, max_west) + "," + LimitTravel(y+1, max_north);
-    ne = "surface/" + LimitTravel(x + 1, max_east) + "," + LimitTravel(y+1, max_north);
-    sw = "surface/" + LimitTravel(x - 1, max_east, 1, max_west) + "," + LimitTravel(y-1, max_north, 1, max_south);
-    se = "surface/" + LimitTravel(x + 1, max_east) + "," + LimitTravel(y-1, max_north, 1, max_south);
+    nw = "wastes/" + LimitTravel(x - 1, max_east, 1, max_west) + "," + LimitTravel(y+1, max_north);
+    ne = "wastes/" + LimitTravel(x + 1, max_east) + "," + LimitTravel(y+1, max_north);
+    sw = "wastes/" + LimitTravel(x - 1, max_east, 1, max_west) + "," + LimitTravel(y-1, max_north, 1, max_south);
+    se = "wastes/" + LimitTravel(x + 1, max_east) + "," + LimitTravel(y-1, max_north, 1, max_south);
 
-    SetSinkRoom(__DIR__+sink);
     SetFlyRoom(__DIR__+fly);
 
     SetGoMessage("You can't travel in that direction.");
@@ -90,6 +88,6 @@ varargs void SetLongAndItems(int x, int y, int z) {
     SetDayLight(30);
     SetNightLight(30);
     SetInventory(inv);
-    SetTerrainType(T_SURFACE);
-    SetMedium(MEDIUM_SURFACE);
+    SetTerrainType(T_wastes);
+    SetMedium(MEDIUM_wastes);
 }
