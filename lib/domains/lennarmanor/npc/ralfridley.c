@@ -3,7 +3,7 @@
 inherit LIB_TRAINER;
 
 static void create() {
-    sentient::create();
+    trainer::create();
     SetKeyName("ralf ridley");
     SetId( ({"ralf", "ralf ridley"}) );
     SetAdjectives(({"fighter"}));
