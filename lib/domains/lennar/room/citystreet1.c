@@ -9,8 +9,9 @@ void create() {
     SetShort("Elma Street");
     SetLong("This is a long north-south street that bisects Lennar. To the north you see a large city square with a statue. To the west is the Prancing Dolphin tavern.");
     SetExits( ([
+        "north" : "/domains/lennar/room/everettsquare",
         "west" : "/domains/lennar/room/start",
-        "north" : "/domains/lennar/room/everettsquare.c",
+        "south" : "/domains/lennar/room/southgate.c",
       ]) );
 
     SetClimate("indoors");

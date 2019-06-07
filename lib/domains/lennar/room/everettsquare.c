@@ -12,9 +12,10 @@ void create() {
         ({ "statue", "large statue" }) : "It's a large statue of a portly middle-aged man sitting on a throne. His face looks stern.",
       ]));
     SetExits( ([
+        "north" : "/domains/lennar/room/elmastreetnorth",
         "south" : "/domains/lennar/room/citystreet1",
         "east" : "/domains/lennar/room/mainstreet1",
-        "north" : "/domains/lennar/room/elmastreetnorth.c",
+        "west" : "/domains/lennar/room/westmainstreet.c",
       ]) );
 
     SetClimate("indoors");

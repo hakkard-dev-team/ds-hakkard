@@ -18,7 +18,7 @@ void create() {
         "south" : "/domains/lennar/room/mainstreet1",
       ]));
 
-    SetClimate("indoors");
+    SetClimate(0);
 
 }
 void init(){
